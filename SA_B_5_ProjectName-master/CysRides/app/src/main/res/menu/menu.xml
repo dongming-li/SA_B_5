@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profile"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_menu_profile"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/calendar_activity"
+        android:title="@string/calendar"
+        android:icon="@drawable/ic_calendar"/>
+
+    <item
+        android:id="@+id/requests"
+        android:title="@string/requests"
+        android:icon="@drawable/ic_menu_offer"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/offers"
+        android:title="@string/offers"
+        android:icon="@drawable/ic_search_black_24dp" />
+
+    <item
+        android:id="@+id/groups"
+        android:title="@string/groups"
+        android:icon="@drawable/ic_menu_contacts"/>
+
+    <item
+        android:id="@+id/createOffer"
+        android:title="@string/create_offer"
+        android:icon="@drawable/ic_menu_create"/>
+
+    <item
+        android:id="@+id/createRequest"
+        android:title="@string/create_request"
+        android:icon="@drawable/ic_menu_create"/>
+
+    <item
+        android:id="@+id/requestsOffers"
+        android:title="@string/requests_and_offers"
+        android:icon="@drawable/ic_menu_offer"/>
+
+    <item
+        android:id="@+id/group_rating_activity"
+        android:title="Rate Groups"
+        android:icon="@drawable/ic_menu_share"/>
+
+    <item
+        android:id="@+id/logout"
+        android:title="@string/logout"
+        android:icon="@drawable/ic_menu_logout"/>
+
+    <!--Make sure this is the last item-->
+    <item
+        android:id="@+id/messaging"
+        android:title="@string/debug"
+        android:visible="false"/>
+
+</menu>

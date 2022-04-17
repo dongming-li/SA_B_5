@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/create_offer_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:divider="?android:dividerHorizontal"
+        android:showDividers="middle">
+
+        <include
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+        <fragment
+            android:id="@+id/offer_destination_autocomplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            android:layout_marginTop="10dp"/>
+
+        <fragment
+            android:id="@+id/offer_start_autocomplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText android:id="@+id/Cost"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:inputType="numberDecimal"
+                android:hint="@string/cost" />
+
+            <EditText android:id="@+id/LeaveDate"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:focusable="false"
+                android:inputType="date"
+                android:hint="@string/leave_date" />
+
+            <EditText android:id="@+id/LeaveTime"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:focusable="false"
+                android:inputType="time"
+                android:hint="@string/leave_time" />
+
+            <EditText android:id="@+id/Description"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:minLines="6"
+                android:gravity="bottom|start"
+                android:maxLines="10"
+                android:scrollbars="vertical"
+                android:hint="@string/description"/>
+
+            <Button android:id="@+id/submit"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/submit" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="false"
+        app:menu="@menu/menu"
+        app:itemIconTint="@color/colorGold"/>
+
+</android.support.v4.widget.DrawerLayout>

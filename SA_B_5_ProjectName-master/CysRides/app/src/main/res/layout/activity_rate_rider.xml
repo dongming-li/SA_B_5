@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rate_rider_activity"
+    android:orientation="vertical"
+    android:padding="100dp">
+
+    <TextView
+        android:id="@+id/rateRiderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate the rider: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/ratingResultTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/goButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GO" />
+</LinearLayout>
